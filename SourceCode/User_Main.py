@@ -1,4 +1,5 @@
 import sys
+import os
 
 from Connector import *
 import Utils
@@ -24,6 +25,9 @@ if __name__ == '__main__':
     # TODO: Try to connect to known peers
 
     # Try to connect to bridge peers
-    bridge_peers = Utils.get_addrs_from_file("bridge_peers.txt")
+    dirname = os.path.dirname(__file__)
+    file_path = os.path.join(dirname, "../dat/bridge_peers.dat")
+
+    bridge_peers = Utils.get_addrs_from_file(file_path)
     user.connector.request_peers(bridge_peers[0])
 
