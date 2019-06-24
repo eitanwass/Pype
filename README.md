@@ -3,6 +3,14 @@
 Pype is a secure P2P shared file storage solution.
 When you use Pype, you need to be able to give in order to get.
 
+Pype works on the premise that the more people use it, the better it is.
+If more people use Pype, it would be:
+- Easier to find peers.
+- Peers would have better connection with you.
+- Your files will be more secured.
+- Your files won't get lost.
+- Would make me happy :)
+
 Pype was originated from my finals project at CS & Cyber class and its main goal was to achieve P2P communication between multiple devices.
 
 ## Explanation
