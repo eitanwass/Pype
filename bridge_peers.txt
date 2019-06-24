@@ -1,0 +1,14 @@
+// List of Bridge Peers
+// Bridge Peers are peers with public IP and Static PORT outside of the NAT.
+// Change to fork website later
+
+// Bridging proccess:
+// client requests bridge to give it peers using UDP
+// bridge requests pong from a known peer that connected to it previously
+// Peer returns pong including its IP and open UDP PORT
+// bridge sends peers ip and port to client
+// -- Might include verifying with UDP
+// Client connects TCP to those
+
+// Test bridge peer
+127.0.0.1:50000

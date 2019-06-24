@@ -1,0 +1,24 @@
+User logs into account with UI requesting email.
+    Every email has a 5# serial number.
+
+User connects to up to 5 known peers in priority:
+    - Last session peers.
+    - Local peers.
+    - Bridge peers.
+
+
+On upload file:
+    Check if has enough peers:
+        -True:
+            Split file and upload each piece as chunk
+        -False:
+            Search for peers and try again
+
+On delete file:
+    Ask if wants to delete from cloud:
+        - True:
+            Send delete message to peers
+
+
+Search for peers:
+    
