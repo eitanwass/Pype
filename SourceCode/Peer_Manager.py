@@ -17,7 +17,6 @@ class PeerManager():
 
     def connect(self, addr):
         self.peer_socket.connect(addr)
-        self.peer_socket.sendall('test'.encode())
         return
 
     def run(self):
