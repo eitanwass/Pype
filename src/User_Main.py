@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     # Try to connect to bridge peers
     dirname = os.path.dirname(__file__)
-    file_path = os.path.join(dirname, "../dat/bridge_peers.dat")
+    file_path = os.path.join(dirname, "data/bridge_peers.dat")
 
     bridge_peers = Utils.get_addrs_from_file(file_path)
     user.connector.request_peers(bridge_peers[0])
